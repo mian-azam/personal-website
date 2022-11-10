@@ -1,0 +1,90 @@
+@import url(./reset.css);
+
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-dark-grey: #3a434d;
+    --app-light-grey: #6c7e90;
+}
+
+body {
+    background-color: #f2fffcff;
+    transition: all 0.25s ease-in-out;
+}
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+/* --------------------------------------HEADER----------------------------------------- */
+
+
+
+
+
+
+/* -------------------------------------MAIN CONTENT----------------------------------- */
+
+
+
+/* -----------------------------------FOOTER-------------------------------------- */
+
+footer {
+    margin-top: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -26px 30px -10px, rgba(0, 0, 0, 0.1) 0px -16px 10px -10px;
+
+}
+
+.footer-nav {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-10px);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li {
+    color: #f0f2f4;
+}
+
+footer ul li+li {
+    margin-left: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--app-light-grey);
+    transition: color 0.25s ease-in-out;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.github:hover {
+    color: #000000;
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+}
+
+/* ----------------------------------------------- */
+/*               Media quiries                     */
+/* ----------------------------------------------- */
