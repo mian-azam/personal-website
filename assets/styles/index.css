@@ -265,11 +265,19 @@ img {
 
 /* -------------------contact section */
 .contact {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+}
+
+
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact h2 {
@@ -363,6 +371,9 @@ footer ul li a {
     .heading h1 {
         font-size: 20px;
     }
+
+
+
 }
 
 @media screen and (max-width: 760px) {
@@ -386,4 +397,5 @@ footer ul li a {
         width: 20%;
         margin: 20px 0;
     }
+
 }
