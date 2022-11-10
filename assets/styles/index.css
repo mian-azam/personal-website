@@ -44,7 +44,7 @@ body {
 .overlap-hero-banner {
     width: 100%;
     height: 100vh;
-    background-color: rgb(82 41 124/0.3);
+    background-color: rgba(192, 187, 198, 0.3);
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px -16px 10px -10px;
 }
@@ -56,7 +56,7 @@ header {
     width: 100%;
     height: 56px;
     display: flex;
-    background-color: rgb(53 26 79/0.7);
+    background-color: var(--app-dark-grey);
     position: fixed;
 }
 
@@ -144,6 +144,10 @@ div .title {
     animation: trans 0.5s ease-in;
 }
 
+div .title figure img {
+    box-shadow: none;
+}
+
 div .title h1 {
     font-size: 40px;
     font-weight: 600;
@@ -153,27 +157,7 @@ div .title p {
     font-size: 25px;
 }
 
-button {
-    width: 120px;
-    height: 46px;
-    background-color: #042a46;
-    border: 1px solid var(--app-light-grey);
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    transform: translateX(-10px);
-    transition: all 0.5s ease-in-out;
-    color: #fff;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: var(--app-light-grey);
-    border: 1px solid var(--app-dark-grey);
-    transition: all 0.1s ease-in-out;
-}
 
 /* -------------------animated down arrow */
 
@@ -222,11 +206,11 @@ button:hover {
 }
 
 .about h1 {
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .about p {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .about p+p {
@@ -234,10 +218,12 @@ button:hover {
 }
 
 /* -------------------achievements section */
+.ach-bg {
+    background-color: rgb(108, 126, 144, 0.3);
+}
 
 .achievements {
     margin-top: 20px;
-    background-color: var(--app-light-grey);
 }
 
 .achievements ul li {
@@ -264,7 +250,8 @@ button:hover {
 
 .two img {
     width: 100%;
-    height: 100%;
+    min-height: 400px;
+    max-height: 600px;
     object-fit: cover;
 }
 
