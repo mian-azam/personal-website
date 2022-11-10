@@ -31,17 +31,19 @@ body {
 /* ----------------------------------------------- */
 
 .hero-banner {
-    background: #fafafa url(../media/about-main-img.jpeg) center/cover no-repeat;
-    background-size: cover;
+    background-image: url(../media/about-main-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-    width: 100%;
+    background-size: 100% 100%;
     height: 100vh;
     position: relative;
+
 }
 
 .overlap-hero-banner {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(82 41 124/0.3);
     display: flex;
     box-shadow: 0px 1px 2px 0px #352a4f;
@@ -151,31 +153,31 @@ div .title p {
     font-size: 25px;
 }
 
-.title .button,
-.project .button {
+button {
     width: 120px;
-    height: 40px;
-    background-color: var(--app-button);
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.25s ease-in-out;
-    animation: translate 0.25s ease-in-out;
+    height: 46px;
+    background-color: #042a46;
+    border: 1px solid var(--app-light-grey);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transform: translateX(-10px);
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+    cursor: pointer;
 }
 
-.title .button a,
-.project .button a {
-    text-decoration: none;
-    color: #fafafa;
-    font-size: 20px;
-    transition: background-color 0.25s ease-in-out;
+button:hover {
+    background-color: var(--app-light-grey);
+    border: 1px solid var(--app-dark-grey);
+    transition: all 0.1s ease-in-out;
 }
 
-.title .button:hover,
-.project .button:hover {
-    background-color: var(--app-primary);
-    transform: translatey(3px);
-}
+
+
+
 
 /* -----------------------------------FOOTER-------------------------------------- */
 
@@ -231,3 +233,47 @@ footer ul li a {
 /* ----------------------------------------------- */
 /*               Media quiries                     */
 /* ----------------------------------------------- */
+@media screen and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    div .bar-menu {
+        display: inline;
+        text-align: right;
+        font-size: 20px;
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    .heading {
+        margin: 20px 0;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .heading {
+        margin: 15px 0;
+        width: 80%;
+    }
+
+    .heading h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    div .bar-menu {
+        display: inline;
+        text-align: right;
+        font-size: 20px;
+        width: 20%;
+        margin: 20px 0;
+    }
+}
