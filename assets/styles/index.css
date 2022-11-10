@@ -175,6 +175,45 @@ button:hover {
     transition: all 0.1s ease-in-out;
 }
 
+/* -------------------animated down arrow */
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: 50%;
+    width: 0;
+    height: 34px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 20px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
 
 
 
