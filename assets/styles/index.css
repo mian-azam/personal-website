@@ -250,13 +250,27 @@ button:hover {
 
 .one {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 2fr;
     gap: 10px;
+}
+
+.one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .two {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 2fr;
 }
 
 img {
@@ -278,6 +292,14 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.achievements ul li {
+    font-size: 30px;
+}
+
+.achievements p {
+    font-size: 30px;
 }
 
 .contact h2 {
@@ -372,7 +394,13 @@ footer ul li a {
         font-size: 20px;
     }
 
+    .achievements ul li {
+        font-size: 15px;
+    }
 
+    .achievements p {
+        font-size: 15px;
+    }
 
 }
 
@@ -398,4 +426,11 @@ footer ul li a {
         margin: 20px 0;
     }
 
+    .achievements ul li {
+        font-size: 20px;
+    }
+
+    .achievements p {
+        font-size: 20px;
+    }
 }
