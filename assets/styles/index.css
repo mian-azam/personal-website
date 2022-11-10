@@ -263,6 +263,30 @@ img {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
 }
 
+/* -------------------contact section */
+.contact {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact h2 {
+    font-size: 30px;
+}
+
+.contact p {
+    font-size: 26px;
+}
+
+.contact p+p {
+    margin-top: 5px;
+}
+
+
+
+
 
 
 /* -----------------------------------FOOTER-------------------------------------- */
