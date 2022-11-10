@@ -103,7 +103,7 @@ header nav ul li a:hover {
     transition: box-shadow 0.25s ease-in-out;
 }
 
-li+li {
+nav li+li {
     margin-left: 10px;
 }
 
@@ -232,6 +232,38 @@ button:hover {
 .about p+p {
     margin-top: 10px;
 }
+
+/* -------------------achievements section */
+
+.achievements {
+    margin-top: 20px;
+    background-color: var(--app-light-grey);
+}
+
+.achievements ul li {
+    font-size: 20px;
+}
+
+.achievements p {
+    font-size: 20px;
+}
+
+.one {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+img {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+}
+
+
 
 /* -----------------------------------FOOTER-------------------------------------- */
 
