@@ -23,8 +23,104 @@ body {
     margin-inline: auto;
 }
 
-/* --------------------------------------HEADER----------------------------------------- */
 
+
+
+/* ----------------------------------------------- */
+/*               HERO BANNER                       */
+/* ----------------------------------------------- */
+
+.hero-banner {
+    background: #fafafa url(../media/about-main-img.jpeg) center/cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.overlap-hero-banner {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82 41 124/0.3);
+    display: flex;
+    box-shadow: 0px 1px 2px 0px #352a4f;
+}
+
+/* ----------------------------------------------- */
+/*               HEADER                       */
+/* ----------------------------------------------- */
+header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    background-color: rgb(53 26 79/0.7);
+    position: fixed;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.heading h1 {
+    color: #f0f2f4;
+    font-size: 30px;
+}
+
+.heading {
+    margin: 10px 0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.heading,
+nav {
+    width: 50%;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: color 0.25s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #fafafa;
+    box-shadow: 0px 1px 0px #fafafa;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+li+li {
+    margin-left: 10px;
+}
+
+.bar-menu {
+    color: #fafafa;
+    display: none;
+}
+
+@keyframes trans {
+    from {
+        opacity: 0;
+        transform: translatey(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
 
 
 
@@ -32,7 +128,54 @@ body {
 
 /* -------------------------------------MAIN CONTENT----------------------------------- */
 
+div .title {
+    margin-inline: auto;
+    color: #fafafa;
+    text-decoration: solid;
+    text-shadow: 0px 2px 2px #352a4f;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: trans 0.5s ease-in;
+}
 
+div .title h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+div .title p {
+    font-size: 25px;
+}
+
+.title .button,
+.project .button {
+    width: 120px;
+    height: 40px;
+    background-color: var(--app-button);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.25s ease-in-out;
+    animation: translate 0.25s ease-in-out;
+}
+
+.title .button a,
+.project .button a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 20px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.title .button:hover,
+.project .button:hover {
+    background-color: var(--app-primary);
+    transform: translatey(3px);
+}
 
 /* -----------------------------------FOOTER-------------------------------------- */
 
